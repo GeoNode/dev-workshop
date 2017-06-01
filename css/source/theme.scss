@@ -1,0 +1,374 @@
+/*************************************************************************************/
+/*                                              __                                   */
+/*                                             /\ \                                  */
+/*    __        __     ___     ___      ___    \_\ \      __                         */
+/*  /'_ `\    /'__`\  / __`\ /' _ `\   / __`\  /'_` \   /'__`\                       */
+/* /\ \L\ \  /\  __/ /\ \L\ \/\ \/\ \ /\ \L\ \/\ \L\ \ /\  __/                       */
+/* \ \____ \ \ \____\\ \____/\ \_\ \_\\ \____/\ \___,_\\ \____\                      */
+/*  \/___L\ \ \/____/ \/___/  \/_/\/_/ \/___/  \/__,_ / \/____/                      */
+/*    /\____/                                                                        */
+/*    \_/__/                                                                         */
+/*************************************************************************************/
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+ // This file has been copied over from
+ // ../../bower_components/reveal.js/css/theme/source/black.scss
+
+ // See ../../bower_components/reveal.js/css/theme/README.md
+ // for further explanations on how to create a custom reveal.js theme.
+
+/*************************************************************************************/
+@import "compass";
+/*************************************************************************************/
+
+// Default mixins and settings -----------------
+@import "../../bower_components/reveal.js/css/theme/template/mixins";
+@import "../../bower_components/reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../bower_components/reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
+
+/******************************************************************************/
+/* Fonts                                                                      */
+/******************************************************************************/
+  // PT Sans (normal, bold, italic, bold italic)
+    @include font-face(
+      "PT Sans",
+      font-files(
+        "pt_sans/pt_sans-web-regular-webfont.ttf",
+        "pt_sans/pt_sans-web-regular-webfont.woff",
+        "pt_sans/pt_sans-web-regular-webfont.svg"
+      ),
+      "pt_sans/pt_sans-web-regular-webfont.eot",
+      normal, normal
+    );
+    @include font-face(
+      "PT Sans",
+      font-files(
+        "pt_sans/pt_sans-web-bold-webfont.ttf",
+        "pt_sans/pt_sans-web-bold-webfont.woff",
+        "pt_sans/pt_sans-web-bold-webfont.svg"
+      ),
+      "pt_sans/pt_sans-web-bold-webfont.eot",
+      bold, normal
+    );
+    @include font-face(
+      "PT Sans",
+      font-files(
+        "pt_sans/pt_sans-web-italic-webfont.ttf",
+        "pt_sans/pt_sans-web-italic-webfont.woff",
+        "pt_sans/pt_sans-web-italic-webfont.svg"
+      ),
+      "pt_sans/pt_sans-web-italic-webfont.eot",
+      normal, italic
+    );
+    @include font-face(
+      "PT Sans",
+      font-files(
+        "pt_sans/pt_sans-web-bolditalic-webfont.ttf",
+        "pt_sans/pt_sans-web-bolditalic-webfont.woff",
+        "pt_sans/pt_sans-web-bolditalic-webfont.svg"
+      ),
+      "pt_sans/pt_sans-web-bolditalic-webfont.eot",
+      bold, italic
+    );
+  // Archivo Narrow (bold, bold italic)
+    @include font-face(
+      "Archivo Narrow",
+      font-files(
+        "archivonarrow/archivonarrow-bold-webfont.ttf",
+        "archivonarrow/archivonarrow-bold-webfont.woff",
+        "archivonarrow/archivonarrow-bold-webfont.svg"
+      ),
+      "archivonarrow/archivonarrow-bold-webfont.eot",
+      bold, normal
+    );
+    @include font-face(
+      "Archivo Narrow",
+      font-files(
+        "archivonarrow/archivonarrow-bolditalic-webfont.ttf",
+        "archivonarrow/archivonarrow-bolditalic-webfont.woff",
+        "archivonarrow/archivonarrow-bolditalic-webfont.svg"
+      ),
+      "archivonarrow/archivonarrow-bolditalic-webfont.eot",
+      bold, italic
+    );
+  // Ubuntu Mono (normal, bold)
+    @include font-face(
+      "Ubuntu Mono",
+      font-files(
+        "ubuntumono/ubuntumono-regular-webfont.ttf",
+        "ubuntumono/ubuntumono-regular-webfont.woff",
+        "ubuntumono/ubuntumono-regular-webfont.svg"
+      ),
+      "ubuntumono/ubuntumono-regular-webfont.eot",
+      normal, normal
+    );
+    @include font-face(
+      "Ubuntu Mono",
+      font-files(
+        "ubuntumono/ubuntumono-bold-webfont.ttf",
+        "ubuntumono/ubuntumono-bold-webfont.woff",
+        "ubuntumono/ubuntumono-bold-webfont.svg"
+      ),
+      "ubuntumono/ubuntumono-bold-webfont.eot",
+      bold, normal
+    );
+/******************************************************************************/
+
+// Override theme settings (see ../../bower_components/reveal.js/css/theme/template/settings.scss)
+
+// Theme template ------------------------------
+@import "../../bower_components/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+/******************************************************************************/
+/* Variables                                                                  */
+/******************************************************************************/
+
+// Colours (GEONODE Text Blues)
+$cBlueLight: #0878BE;
+$cBlueDark:  #0D5B90;
+
+// Colours (GEONODE Footprint)
+$cBlue:      #0060A0;
+$cGreen:     #467A1C;
+$cBlack:     #312D2E;
+$cGreenLgt:  #82B919;
+$cAzzurro:   #009EE1;
+
+// Font
+$font_family:                     "PT Sans", sans-serif;
+$font_size:                       34px;
+$font_line_height:                38px;
+$font_weight:                     400;
+$font_colour:                     $cBlack;
+$font_letter_spacing:             -0.02em;
+
+// Font Mono
+$font_mono_family:                "Ubuntu Mono";
+$font_mono_size:                  24px;
+$font_mono_line_height:           $font_mono_size;
+$font_mono_letter_spacing:        0;
+
+// Links
+$link_color:                      $cGreen;
+$link_hover:                      $cBlueLight;
+$navigation_color:                $cBlueDark;
+$navigation_hover:                $cGreen;
+
+// Body Gradient
+$body_gradient_center:            white;
+$body_gradient_outer:             darken(white, 8%);
+
+// Progress
+$progress_empty:                  $cAzzurro;
+$progress_full:                   $cGreenLgt;
+
+// Headings
+$h_font_family:                   "Archivo Narrow", sans-serif;
+$h_font_size_h_variation:         10px;
+$h_font_size_h1:                  $font_size + 5 * $h_font_size_h_variation;
+$h_font_size_h2:                  $font_size + 3 * $h_font_size_h_variation;
+$h_font_size_h3:                  $font_size + 2 * $h_font_size_h_variation;
+$h_font_size_h4:                  $font_size + 1 * $h_font_size_h_variation;
+$h_font_size_h5:                  $font_size + 0 * $h_font_size_h_variation;
+$h_font_weight:                   700;
+$h_font_colour:                   $cBlueDark;
+$h_font_letter_spacing:           -0.03em;
+$h_font_margin:                   0.2em 0;
+$h_text_shadow:                   0  1px  0   $body_gradient_center,
+                                  0  1px  4px $cBlack;
+$h_text_transform:                none;
+$h1_line_height:                  1;
+$h2_line_height:                  1;
+$h1_text_shadow:                  0  1px  0   darken(white, 12%),
+                                  0  2px  0   darken(white, 14%),
+                                  0  3px  0   darken(white, 16%),
+                                  0  4px  0   darken(white, 18%),
+                                  0  5px  0   darken(white, 20%),
+                                  0  6px  1px transparentize(black, 0.9),
+                                  0  0    5px transparentize(black, 0.9),
+                                  0  2px  3px transparentize(black, 0.7),
+                                  0  6px  5px transparentize(black, 0.8),
+                                  0  6px 10px transparentize(black, 0.75),
+                                  0 20px 20px transparentize(black, 0.85);
+
+
+/******************************************************************************/
+/******************************************************************************/
+/* General Styles                                                             */
+/******************************************************************************/
+  body {
+    @include background-image(radial-gradient($body_gradient_center, $body_gradient_outer));
+    text-align: left;
+  }
+  .slides {
+    top: 50% !important;
+    height: auto;
+  }
+  .reveal .slides>section,
+  .reveal .slides>section>section {
+    line-height: 1.3;
+    font-weight: inherit;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    height: 900px;
+  }
+  .reveal, .reveal p {
+    font-family:    $font_family;
+    font-size:      $font_size;
+    font-weight:    $font_weight;
+    color:          $font_colour;
+    line-height:    $font_line_height;
+    letter-spacing: $font_letter_spacing;
+
+  }
+  ::selection {
+    color: white; background: $cGreenLgt; text-shadow: none;
+  }
+  .reveal code {
+    font-family:    $font_mono_family;
+    font-size:      $font_mono_size;
+    color:          white;
+    line-height:    $font_mono_line_height;
+    letter-spacing: $font_mono_letter_spacing;
+    display:        inline-block;
+    padding:        3px 10px 2px 10px;
+    background:     $cBlack;
+    position: relative; top: -3px;
+    text-align: left;
+    @include border-radius(6px);
+    @include box-shadow($cBlack 0 0 5px);
+  }
+  .reveal pre {
+    @include box-shadow(none);
+    width: 976px;
+  }
+  .reveal pre code {
+    display: block;
+    padding: 8px;
+    line-height: 1.05em;
+  }
+/******************************************************************************/
+/******************************************************************************/
+/* Headings                                                                   */
+/******************************************************************************/
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+    font-family:    $h_font_family;
+    font-weight:    $h_font_weight;
+    color:          $h_font_colour;
+    letter-spacing: $h_font_letter_spacing;
+    margin:         $h_font_margin;
+    text-shadow:    $h_text_shadow;
+    text-transform: $h_text_transform;
+  }
+  .reveal h1 { text-shadow: $h1_text_shadow; line-height: $h1_line_height; }
+  .reveal h1 { font-size:   $h_font_size_h1; }
+  .reveal h2 { font-size:   $h_font_size_h2; line-height: $h2_line_height; }
+  .reveal h3 { font-size:   $h_font_size_h3; }
+  .reveal h4 { font-size:   $h_font_size_h4; }
+  .reveal h5 { font-size:   $h_font_size_h5; }
+/******************************************************************************/
+/******************************************************************************/
+/* Links                                                                      */
+/******************************************************************************/
+  .reveal a:not(.image) {
+    color: $link_color;
+    text-decoration: none;
+  }
+  .reveal a:not(.image):hover {
+    color: $link_hover;
+  }
+/******************************************************************************/
+/******************************************************************************/
+/* Navigation Controls                                                        */
+/******************************************************************************/
+  .reveal .controls {
+    div.navigate-left, div.navigate-left.enabled {
+      border-right-color: $navigation_color;
+    }
+    div.navigate-right, div.navigate-right.enabled {
+      border-left-color: $navigation_color;
+    }
+    div.navigate-up, div.navigate-up.enabled {
+      border-bottom-color: $navigation_color;
+    }
+    div.navigate-down, div.navigate-down.enabled {
+      border-top-color: $navigation_color;
+    }
+    div.navigate-left.enabled:hover {
+      border-right-color: $navigation_hover;
+    }
+    div.navigate-right.enabled:hover {
+      border-left-color: $navigation_hover;
+    }
+    div.navigate-up.enabled:hover {
+      border-bottom-color: $navigation_hover;
+    }
+    div.navigate-down.enabled:hover {
+      border-top-color: $navigation_hover;
+    }
+  }
+/******************************************************************************/
+/******************************************************************************/
+/* Progress Bar                                                               */
+/******************************************************************************/
+  .reveal .progress {
+    top: 0;
+    height: 5px;
+    background: $progress_empty;
+  }
+  .reveal .progress span {
+    background: $progress_full;
+    @include transition(width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985));
+  }
+/******************************************************************************/
+/******************************************************************************/
+/* Slides                                                                     */
+/******************************************************************************/
+html.end body {
+    @include background-image(radial-gradient(lighten($cBlueDark, 70%), desaturate(lighten($cBlueDark, 30%), 70%)));
+    .reveal .progress,
+    .reveal .controls { opacity: 0; }
+}
+
+.reveal p {
+    margin: $blockMargin 0;
+}
+/******************************************************************************/
+/******************************************************************************/
+/* IMAGES
+/******************************************************************************/
+
+.reveal section img {
+    margin: 0px 0px;
+    background: rgba(255,255,255,0.12);
+    border: 0px solid $mainColor;
+
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
+}
+
+    .reveal section img.plain {
+        border: 0;
+        box-shadow: none;
+    }
+
+    .reveal a img {
+        -webkit-transition: all .15s linear;
+           -moz-transition: all .15s linear;
+                transition: all .15s linear;
+    }
+
+    .reveal a:hover img {
+        background: rgba(255,255,255,0.2);
+        border-color: $linkColor;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+    }

@@ -1,0 +1,8 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Working Open Source",
+    "packageVersion": "0.0.1",
+    "useSass": true,
+    "deployToGithubPages": false
+  }
+}
