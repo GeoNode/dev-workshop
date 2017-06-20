@@ -1,6 +1,6 @@
 {
   "generator-reveal": {
-    "presentationTitle": "Working Open Source",
+    "presentationTitle": "GeoNode developers workshop",
     "packageVersion": "0.0.1",
     "useSass": true,
     "deployToGithubPages": false

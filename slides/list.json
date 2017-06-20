@@ -5,8 +5,34 @@
     "data-background": "css/img/bg.jpg"
     }
   },{
-  "filename": "Agenda.md",
+  "filename": "agenda.md",
     "attr": {
     "data-background": "css/img/bg.jpg"
     }
+  },[{
+    "filename": "dev_mode/index.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "dev_mode/docker.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "dev_mode/ansible.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "dev_mode/virtualenv.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  }],[{
+    "filename": "geonode_project/index.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
   }]
+]
