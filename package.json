@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/simod/gi-seminar.git"
+    "url": "https://github.com/GeoNode/dev-workshop.git"
   },
   "scripts": {
     "test": "grunt test"
