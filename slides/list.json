@@ -34,5 +34,25 @@
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
+  },{
+    "filename": "geonode_project/python-inheritance.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geonode_project/setup.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geonode_project/howto_run.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geonode_project/final_structure.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
   }]
 ]
