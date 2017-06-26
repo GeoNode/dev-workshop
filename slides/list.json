@@ -54,5 +54,15 @@
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
+  }],[{
+    "filename": "custom_app/index.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  }],[{
+    "filename": "look_feel/index.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
   }]
 ]
