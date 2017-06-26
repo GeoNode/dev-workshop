@@ -1,0 +1,728 @@
+/*************************************************************************************/
+/*                                              __                                   */
+/*                                             /\ \                                  */
+/*    __        __     ___     ___      ___    \_\ \      __                         */
+/*  /'_ `\    /'__`\  / __`\ /' _ `\   / __`\  /'_` \   /'__`\                       */
+/* /\ \L\ \  /\  __/ /\ \L\ \/\ \/\ \ /\ \L\ \/\ \L\ \ /\  __/                       */
+/* \ \____ \ \ \____\ \____/\ \_\ \_\ \____/\ \___,_\ \____\                      */
+/*  \/___L\ \ \/____/ \/___/  \/_/\/_/ \/___/  \/__,_ / \/____/                      */
+/*    /\____/                                                                        */
+/*    \_/__/                                                                         */
+/*************************************************************************************/
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+/*************************************************************************************/
+/*************************************************************************************/
+@import url(../bower_components/reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
+/******************************************************************************/
+/* Fonts                                                                      */
+/******************************************************************************/
+@font-face {
+  font-family: "PT Sans";
+  src: url('fonts/pt_sans/pt_sans-web-regular-webfont.eot?1493199472');
+  src: url('fonts/pt_sans/pt_sans-web-regular-webfont.eot?&1493199472#iefix') format('embedded-opentype'), url('fonts/pt_sans/pt_sans-web-regular-webfont.ttf?1493199472') format('truetype'), url('fonts/pt_sans/pt_sans-web-regular-webfont.woff?1493199472') format('woff'), url('fonts/pt_sans/pt_sans-web-regular-webfont.svg?1493199472') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url('fonts/pt_sans/pt_sans-web-bold-webfont.eot?1493199472');
+  src: url('fonts/pt_sans/pt_sans-web-bold-webfont.eot?&1493199472#iefix') format('embedded-opentype'), url('fonts/pt_sans/pt_sans-web-bold-webfont.ttf?1493199472') format('truetype'), url('fonts/pt_sans/pt_sans-web-bold-webfont.woff?1493199472') format('woff'), url('fonts/pt_sans/pt_sans-web-bold-webfont.svg?1493199472') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url('fonts/pt_sans/pt_sans-web-italic-webfont.eot?1493199472');
+  src: url('fonts/pt_sans/pt_sans-web-italic-webfont.eot?&1493199472#iefix') format('embedded-opentype'), url('fonts/pt_sans/pt_sans-web-italic-webfont.ttf?1493199472') format('truetype'), url('fonts/pt_sans/pt_sans-web-italic-webfont.woff?1493199472') format('woff'), url('fonts/pt_sans/pt_sans-web-italic-webfont.svg?1493199472') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url('fonts/pt_sans/pt_sans-web-bolditalic-webfont.eot?1493199472');
+  src: url('fonts/pt_sans/pt_sans-web-bolditalic-webfont.eot?&1493199472#iefix') format('embedded-opentype'), url('fonts/pt_sans/pt_sans-web-bolditalic-webfont.ttf?1493199472') format('truetype'), url('fonts/pt_sans/pt_sans-web-bolditalic-webfont.woff?1493199472') format('woff'), url('fonts/pt_sans/pt_sans-web-bolditalic-webfont.svg?1493199472') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Archivo Narrow";
+  src: url('fonts/archivonarrow/archivonarrow-bold-webfont.eot?1493199472');
+  src: url('fonts/archivonarrow/archivonarrow-bold-webfont.eot?&1493199472#iefix') format('embedded-opentype'), url('fonts/archivonarrow/archivonarrow-bold-webfont.ttf?1493199472') format('truetype'), url('fonts/archivonarrow/archivonarrow-bold-webfont.woff?1493199472') format('woff'), url('fonts/archivonarrow/archivonarrow-bold-webfont.svg?1493199472') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Archivo Narrow";
+  src: url('fonts/archivonarrow/archivonarrow-bolditalic-webfont.eot?1493199472');
+  src: url('fonts/archivonarrow/archivonarrow-bolditalic-webfont.eot?&1493199472#iefix') format('embedded-opentype'), url('fonts/archivonarrow/archivonarrow-bolditalic-webfont.ttf?1493199472') format('truetype'), url('fonts/archivonarrow/archivonarrow-bolditalic-webfont.woff?1493199472') format('woff'), url('fonts/archivonarrow/archivonarrow-bolditalic-webfont.svg?1493199472') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url('fonts/ubuntumono/ubuntumono-regular-webfont.eot?1493199472');
+  src: url('fonts/ubuntumono/ubuntumono-regular-webfont.eot?&1493199472#iefix') format('embedded-opentype'), url('fonts/ubuntumono/ubuntumono-regular-webfont.ttf?1493199472') format('truetype'), url('fonts/ubuntumono/ubuntumono-regular-webfont.woff?1493199472') format('woff'), url('fonts/ubuntumono/ubuntumono-regular-webfont.svg?1493199472') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url('fonts/ubuntumono/ubuntumono-bold-webfont.eot?1493199472');
+  src: url('fonts/ubuntumono/ubuntumono-bold-webfont.eot?&1493199472#iefix') format('embedded-opentype'), url('fonts/ubuntumono/ubuntumono-bold-webfont.ttf?1493199472') format('truetype'), url('fonts/ubuntumono/ubuntumono-bold-webfont.woff?1493199472') format('woff'), url('fonts/ubuntumono/ubuntumono-bold-webfont.svg?1493199472') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/******************************************************************************/
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+/* line 7, ../bower_components/reveal.js/css/theme/template/theme.scss */
+body {
+  background: #2b2b2b;
+  background-color: #2b2b2b;
+}
+
+/* line 12, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #eee;
+}
+
+/* line 19, ../bower_components/reveal.js/css/theme/template/theme.scss */
+::selection {
+  color: #fff;
+  background: #FF5E99;
+  text-shadow: none;
+}
+
+/* line 25, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .slides > section,
+.reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+/* line 35, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #eee;
+  font-family: "League Gothic", Impact, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+/* line 55, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal h1 {
+  font-size: 3.77em;
+}
+
+/* line 56, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal h2 {
+  font-size: 2.11em;
+}
+
+/* line 57, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal h3 {
+  font-size: 1.55em;
+}
+
+/* line 58, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal h4 {
+  font-size: 1em;
+}
+
+/* line 60, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal h1 {
+  text-shadow: none;
+}
+
+/*********************************************
+ * OTHER
+ *********************************************/
+/* line 69, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3;
+}
+
+/* Ensure certain elements are never larger than the slide itself */
+/* line 75, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+/* line 81, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+}
+
+/* line 86, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal em {
+  font-style: italic;
+}
+
+/* line 90, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+/* line 99, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal ol {
+  list-style-type: decimal;
+}
+
+/* line 103, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal ul {
+  list-style-type: disc;
+}
+
+/* line 107, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal ul ul {
+  list-style-type: square;
+}
+
+/* line 111, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal ul ul ul {
+  list-style-type: circle;
+}
+
+/* line 115, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+/* line 123, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal dt {
+  font-weight: bold;
+}
+
+/* line 127, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal dd {
+  margin-left: 40px;
+}
+
+/* line 131, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal q,
+.reveal blockquote {
+  quotes: none;
+}
+
+/* line 136, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 147, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+/* line 152, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal q {
+  font-style: italic;
+}
+
+/* line 156, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* line 171, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal code {
+  font-family: monospace;
+}
+
+/* line 175, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+}
+
+/* line 183, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 189, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal table th {
+  font-weight: bold;
+}
+
+/* line 193, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+/* line 200, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center;
+}
+
+/* line 205, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right;
+}
+
+/* line 210, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal table tr:last-child td {
+  border-bottom: none;
+}
+
+/* line 214, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal sup {
+  vertical-align: super;
+}
+
+/* line 217, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal sub {
+  vertical-align: sub;
+}
+
+/* line 221, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+/* line 228, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal small * {
+  vertical-align: top;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+/* line 237, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal a {
+  color: #13DAEC;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  transition: color .15s ease;
+}
+
+/* line 245, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal a:hover {
+  color: #71e9f4;
+  text-shadow: none;
+  border: none;
+}
+
+/* line 252, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .roll span:after {
+  color: #fff;
+  background: #0d99a5;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+/* line 262, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* line 270, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none;
+}
+
+/* line 275, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal a img {
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear;
+}
+
+/* line 281, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #13DAEC;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+/* line 293, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: #13DAEC;
+}
+
+/* line 298, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: #13DAEC;
+}
+
+/* line 303, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: #13DAEC;
+}
+
+/* line 308, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: #13DAEC;
+}
+
+/* line 313, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .controls .navigate-left.enabled:hover {
+  border-right-color: #71e9f4;
+}
+
+/* line 317, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .controls .navigate-right.enabled:hover {
+  border-left-color: #71e9f4;
+}
+
+/* line 321, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .controls .navigate-up.enabled:hover {
+  border-bottom-color: #71e9f4;
+}
+
+/* line 325, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .controls .navigate-down.enabled:hover {
+  border-top-color: #71e9f4;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+/* line 334, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 337, ../bower_components/reveal.js/css/theme/template/theme.scss */
+.reveal .progress span {
+  background: #13DAEC;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/******************************************************************************/
+/* Variables                                                                  */
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/* General Styles                                                             */
+/******************************************************************************/
+/* line 208, source/theme.scss */
+body {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ViZWJlYiIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -moz-radial-gradient(#ffffff, #ebebeb);
+  background-image: -webkit-radial-gradient(#ffffff, #ebebeb);
+  background-image: radial-gradient(#ffffff, #ebebeb);
+  text-align: left;
+}
+
+/* line 212, source/theme.scss */
+.slides {
+  top: 50% !important;
+  height: auto;
+}
+
+/* line 216, source/theme.scss */
+.reveal .slides > section,
+.reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  height: 900px;
+}
+
+/* line 224, source/theme.scss */
+.reveal, .reveal p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  color: #312D2E;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+}
+
+/* line 233, source/theme.scss */
+::selection {
+  color: white;
+  background: #82B919;
+  text-shadow: none;
+}
+
+/* line 236, source/theme.scss */
+.reveal code {
+  font-family: "Ubuntu Mono";
+  font-size: 24px;
+  color: white;
+  line-height: 24px;
+  letter-spacing: 0;
+  display: inline-block;
+  padding: 3px 10px 2px 10px;
+  background: #312D2E;
+  position: relative;
+  top: -3px;
+  text-align: left;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -moz-box-shadow: #312D2E 0 0 5px;
+  -webkit-box-shadow: #312D2E 0 0 5px;
+  box-shadow: #312D2E 0 0 5px;
+}
+
+/* line 250, source/theme.scss */
+.reveal pre {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  width: 976px;
+}
+
+/* line 254, source/theme.scss */
+.reveal pre code {
+  display: block;
+  padding: 8px;
+  line-height: 1.05em;
+}
+
+/******************************************************************************/
+/******************************************************************************/
+/* Headings                                                                   */
+/******************************************************************************/
+/* line 263, source/theme.scss */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: 700;
+  color: #3366cc;
+  letter-spacing: -0.03em;
+  margin: 0.2em 0;
+  text-shadow: 0 1px 0 white, 0 1px 4px #312D2E;
+  text-transform: none;
+}
+
+/* line 272, source/theme.scss */
+.reveal h1 {
+  text-shadow: 0 1px 0 #e0e0e0, 0 2px 0 #dbdbdb, 0 3px 0 #d6d6d6, 0 4px 0 #d1d1d1, 0 5px 0 #cccccc, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.3), 0 6px 5px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+  line-height: 1;
+}
+
+/* line 273, source/theme.scss */
+.reveal h1 {
+  font-size: 84px;
+}
+
+/* line 274, source/theme.scss */
+.reveal h2 {
+  font-size: 64px;
+  line-height: 1;
+}
+
+/* line 275, source/theme.scss */
+.reveal h3 {
+  font-size: 54px;
+}
+
+/* line 276, source/theme.scss */
+.reveal h4 {
+  font-size: 44px;
+}
+
+/* line 277, source/theme.scss */
+.reveal h5 {
+  font-size: 34px;
+}
+
+/******************************************************************************/
+/******************************************************************************/
+/* Links                                                                      */
+/******************************************************************************/
+/* line 282, source/theme.scss */
+.reveal a:not(.image) {
+  color: #267326;
+  text-decoration: none;
+}
+
+/* line 286, source/theme.scss */
+.reveal a:not(.image):hover {
+  color: #39ac39;
+}
+
+/******************************************************************************/
+/******************************************************************************/
+/* Navigation Controls                                                        */
+/******************************************************************************/
+/* line 294, source/theme.scss */
+.reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
+  border-right-color: #0D5B90;
+}
+/* line 297, source/theme.scss */
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
+  border-left-color: #0D5B90;
+}
+/* line 300, source/theme.scss */
+.reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #0D5B90;
+}
+/* line 303, source/theme.scss */
+.reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
+  border-top-color: #0D5B90;
+}
+/* line 306, source/theme.scss */
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #467A1C;
+}
+/* line 309, source/theme.scss */
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #467A1C;
+}
+/* line 312, source/theme.scss */
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #467A1C;
+}
+/* line 315, source/theme.scss */
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #467A1C;
+}
+
+/******************************************************************************/
+/******************************************************************************/
+/* Progress Bar                                                               */
+/******************************************************************************/
+/* line 323, source/theme.scss */
+.reveal .progress {
+  top: 0;
+  height: 5px;
+  background: #009EE1;
+}
+
+/* line 328, source/theme.scss */
+.reveal .progress span {
+  background: #82B919;
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/******************************************************************************/
+/******************************************************************************/
+/* Slides                                                                     */
+/******************************************************************************/
+/* line 336, source/theme.scss */
+html.end body {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhlOWVhOCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -moz-radial-gradient(#ffffff, #8e9ea8);
+  background-image: -webkit-radial-gradient(#ffffff, #8e9ea8);
+  background-image: radial-gradient(#ffffff, #8e9ea8);
+}
+/* line 338, source/theme.scss */
+html.end body .reveal .progress,
+html.end body .reveal .controls {
+  opacity: 0;
+}
+
+/* line 342, source/theme.scss */
+.reveal p {
+  margin: 20px 0;
+}
+
+/******************************************************************************/
+/******************************************************************************/
+/* IMAGES
+/******************************************************************************/
+/* line 350, source/theme.scss */
+.reveal section img {
+  margin: 0px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 0px solid #eee;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
+}
+
+/* line 358, source/theme.scss */
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none;
+}
+
+/* line 363, source/theme.scss */
+.reveal a img {
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear;
+}
+
+/* line 369, source/theme.scss */
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #13DAEC;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+}
