@@ -89,5 +89,50 @@
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
+  }],[{
+    "filename": "geocollection_app/index.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geocollection_app/model.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geocollection_app/permissions.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geocollection_app/migrate.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geocollection_app/view.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geocollection_app/url.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geocollection_app/admin.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geocollection_app/template.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "geocollection_app/results.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
   }]
 ]
