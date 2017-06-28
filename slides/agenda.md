@@ -3,8 +3,8 @@
 * GeoNode in development mode, how to
 * The geonode-project to customize GeoNode
 * Change the look and feel
-* Add a third party app
 * Add your own app
-* Add your own models
-* Build your own APIs, views and logic
+* Add your own models, views and logic
+* Build your own APIs
+* Add a third party app
 * Deploy your customized GeoNode
