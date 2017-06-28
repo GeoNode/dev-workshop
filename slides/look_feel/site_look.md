@@ -5,7 +5,7 @@ We can add a `Geocollections`entry in the top menu bar.
 
 Edit the `site_base.html`file in the templates folder and uncomment the list item adapting the text as well.
 
-```
+```html
 {% block extra_tab %}
 <li>
  <a href="geocollections">Geocollections</a>
