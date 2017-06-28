@@ -55,12 +55,37 @@
       "data-background": "css/img/bg.jpg"
       }
   }],[{
-    "filename": "custom_app/index.md",
+    "filename": "look_feel/index.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "look_feel/home_content.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "look_feel/home_look.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "look_feel/site_look.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "look_feel/generic_page.md",
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
   }],[{
-    "filename": "look_feel/index.md",
+    "filename": "custom_app/index.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "custom_app/create_collections.md",
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
