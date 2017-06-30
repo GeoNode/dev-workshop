@@ -129,5 +129,55 @@
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
+  }],[{
+    "filename": "api-permissions/index.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "api-permissions/permissions_meta.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "api-permissions/permissions_default.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "api-permissions/permissions_methods.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "api-permissions/permissions_view.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "api-permissions/permissions_url.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "api-permissions/permissions_client.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "api-permissions/api.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "api-permissions/api_auth.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "api-permissions/api_urls.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
   }]
 ]
