@@ -179,5 +179,10 @@
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
+  },{
+    "filename": "api-permissions/test-api.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
   }]
 ]

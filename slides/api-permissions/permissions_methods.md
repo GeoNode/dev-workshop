@@ -6,7 +6,7 @@ We can add this to our Geocollection model
 ```python
 def set_permissions(self, perm_spec):
   anonymous_group = Group.objects.get(name='anonymous')
-  remove_perm('view_geocollection', anonymous_group, self)
+  remove_object_permissions(self)
 
   if 'users' in perm_spec and "AnonymousUser" in perm_spec['users']:
     assign_perm('view_geocollection', anonymous_group, self)
@@ -25,7 +25,7 @@ def set_permissions(self, perm_spec):
 def remove_object_permissions(self):
   from guardian.models import UserObjectPermission, GroupObjectPermission
   UserObjectPermission.objects.filter(content_type=ContentType.objects.get_for_model(self),
-                                        object_pk=instance.id).delete()
+                                        object_pk=self.id).delete()
   GroupObjectPermission.objects.filter(content_type=ContentType.objects.get_for_model(self),
-                                         object_pk=instance.id).delete()
+                                         object_pk=self.id).delete()
 ```
