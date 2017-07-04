@@ -184,5 +184,20 @@
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
+  }],[{
+    "filename": "deploy/index.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "deploy/github.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "deploy/server_setup.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
   }]
 ]
