@@ -199,5 +199,10 @@
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
+  },{
+    "filename": "deploy/my_geonode.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
   }]
 ]
