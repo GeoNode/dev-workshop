@@ -6,6 +6,7 @@ We can add a `Geocollections`entry in the top menu bar.
 Edit the `site_base.html`file in the templates folder and uncomment the list item adapting the text as well.
 
 {% raw %}
+
 ```html
 {% block extra_tab %}
 <li>
@@ -13,6 +14,7 @@ Edit the `site_base.html`file in the templates folder and uncomment the list ite
 </li>
 {% endblock %}
 ```
+
 {% endraw %}
 
 On browser refresh you will see a new entry in the nav bar which is persistent to the whole site.

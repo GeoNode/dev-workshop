@@ -1,4 +1,4 @@
-# Adding a views
+# Adding a view
 
 We can use a django generic view to show the collections detail.
 

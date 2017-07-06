@@ -1,8 +1,8 @@
 # Add url configuration
 
-In order to access our view we also nee a url mapping,
+In order to access our view we also need an url mapping,
 
-We can create a urls.py file containing a url mapping to our generic view:
+We can create a `urls.py` file containing a url mapping to our generic view:
 
 ```python
 from django.conf.urls import patterns, url
@@ -15,7 +15,8 @@ urlpatterns = patterns('views',
 
 ```
 We also need to register the app urls in the project urls.
-Modify the `my_geonode`url adding the following:
+So let's modify the *my_geonode* `urls.py` file adding the following:
+
 ```python
 url(r'^geocollections/', include('geocollections.urls')),
 ```

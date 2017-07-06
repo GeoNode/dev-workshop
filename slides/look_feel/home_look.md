@@ -3,7 +3,7 @@ To change the theme of our geonode-project we can act on the `site_base.css` fil
 
 The file is empty so we can inspect elements of the home page with the browser's developer tools and define css rules in there.
 
-For example if we want to change the background of the `jumbotron', we can add
+For example if we want to change the background of the `jumbotron`, we can add
 
 `.home .jumbotron { background: yellow }`
 

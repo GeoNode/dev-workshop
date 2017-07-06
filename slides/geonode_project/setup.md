@@ -1,6 +1,6 @@
 # Let's create our own geonode-project
 
-#### Make sure to run it just outside the geonode folder as we will keep then completely separate
+#### Make sure to run it just outside the geonode folder as we will keep them completely separate
 
 `$ django-admin.py startproject my_geonode --template=https://github.com/GeoNode/geonode-project/archive/2.6.zip -epy,rst`
 
