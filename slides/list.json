@@ -204,5 +204,35 @@
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
-  }]
+  }],[{
+    "filename": "third_party_app/index.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "third_party_app/install_wagtail.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "third_party_app/settings.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "third_party_app/urls.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "third_party_app/admin_page.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  }],{
+  "filename": "thanks.md",
+    "attr": {
+    "data-background": "css/img/bg.jpg"
+    }
+  }
 ]
