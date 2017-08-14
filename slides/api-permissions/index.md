@@ -1,6 +1,6 @@
 # Permissions and APIs
 
-In this chapter we will add some more advanced logic like permissins and APIs.
+In this chapter we will add some more advanced logic like permissions and APIs.
 
 The permissions in GeoNode are managed with django-guardian, a library which allow to set object level permissions (django has table level authorization).
 
