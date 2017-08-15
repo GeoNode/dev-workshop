@@ -1,10 +1,11 @@
-# Scaling my SDI
-## Containers or VMs?
+# GeoNode Developers Workshop
 
-#### Boston, 08/15/2017
+## Cambridge, 08/14/2017
 
-##### Francesco Bartoli - Geobeyond Srl
+##### Simone Dalmasso
+##### European Commission - Joint Research Center
+[![JRC](css/img/jrc-logo.gif)](https://ec.europa.eu/jrc/en)
+
+##### Francesco Bartoli
+##### Geobeyond Srl
 [![Geobeyond](css/img/gb-logo.png)](http://www.geobeyond.it)
-
-##### Angelos Tzotsos - OSGeo
-[![OSGEO](css/img/OSGeo_logo.png)](http://www.osgeo.org/)

@@ -1,15 +1,10 @@
 # Agenda
 
-* GeoNode introduction
-* Ansible & Docker introduction
-* Ansible installation
-    * Managing VMs
-    * Playbook overview
-* Scaling with VMs
-* Docker installation
-    * Containerization for components
-    * docker-compose orchestration
-    * Separation of Duty on Docker hub
-* Scaling with container
-* Ansible vs Docker deployment
-* Next to come
+* GeoNode in development mode, how to
+* The geonode-project to customize GeoNode
+* Change the look and feel
+* Add your own app
+* Add your own models, views and logic
+* Build your own APIs
+* Add a third party app
+* Deploy your customized GeoNode
