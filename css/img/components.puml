@@ -1,0 +1,79 @@
+@startuml
+
+cloud "NGINX/APACHE" {
+  package "GEONODE VIRTUAL HOST" {
+    [WSGI-Process]
+    [GeoServer Public]
+    [HTTP 80]
+  }
+}
+
+node "Middleware Servers" {
+
+    package "Django Server" {
+        package "Django" {
+            [Django]
+        }
+    }
+
+    package "GeoServer" {
+        folder "GeoServer Internal" {
+            [GeoServer Internal]
+        }
+        folder "GeoWebCache" {
+            [GeoWebCache]
+        }
+        folder "GeoFence" {
+            [GeoFence]
+        }
+        [HTTP 8080]
+    }
+
+    frame "CSW Servers" {
+        package "pyCSW" {
+            [pyCSW]
+        }
+        package "GeoNetwork" {
+            [GeoNetwork]
+        }
+    }
+
+    frame "Indexes Servers" {
+        package "Elasticsearch" {
+            [Elasticsearch]
+        }
+        package "SOLR" {
+            [SOLR]
+        }
+    }
+
+}
+
+node "Back-End Server & Elements" {
+  database "PostgreSQL" {
+    [geonode]
+    [geonode_data]
+    [TCP 5432]
+  }
+  folder "ActiveMQ" {
+    [ActiveMQ]
+  }
+  folder "GeoServer Data" {
+    [GeoServer Data Dir]
+  }
+}
+
+
+[HTTP 80] .. [HTTP 8080]
+[HTTP 8080] .. [TCP 5432]
+[Django] .. [TCP 5432]
+[Django] .. [HTTP 8080]
+/'[WSGI-Process] .. [Django] : HTTP
+[GeoServer Internal] .. [GeoServer Public] : HTTP
+[GeoServer Internal] .. [geonode_data] : JDBC
+[Django] .. [geonode] : SQL
+[Django] .. [geonode_data] : SQL
+[Django] .. [GeoFence] : HTTP
+[Django] .. [pyCSW] : HTTP'/
+
+@enduml

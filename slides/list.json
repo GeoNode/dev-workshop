@@ -1,238 +1,176 @@
 [
-  {
-  "filename": "index.md",
-    "attr": {
-    "data-background": "css/img/bg.jpg"
+    {
+        "attr": {
+            "data-background": "css/img/bg.jpg"
+        },
+        "filename": "index.md"
+    },
+    {
+        "attr": {
+            "data-background": "css/img/bg.jpg"
+        },
+        "filename": "agenda.md"
+    },
+    [
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "introduction/index.md"
+        }
+    ],
+    [
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "introduction/ansible_docker_intro.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "introduction/ansible_intro_1.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "introduction/ansible_intro_2.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "introduction/docker.md"
+        }
+    ],
+    [
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "ansible/index.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "ansible/vm.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "ansible/playbook.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "ansible/scaling.md"
+        }
+    ],
+    [
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/intro/benefits.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/intro/benefits-1.md"
+        }
+    ],
+    [
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/containerization/components.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/containerization/data-configuration.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/containerization/repository.md"
+        }
+    ],
+    [
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/orchestration/compose.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/orchestration/challenges.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/orchestration/challenges-1.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/orchestration/shortcuts.md"
+        }
+    ],
+    [
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/sod.md"
+        }
+    ],
+    [
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/scaling/rancher.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "docker/scaling/challenge.md"
+        }
+    ],
+    [
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "deployment/ansible_vs_docker.md"
+        },
+        {
+            "attr": {
+                "data-background": "css/img/bg.jpg"
+            },
+            "filename": "deployment/future.md"
+        }
+    ],
+    {
+        "attr": {
+            "data-background": "css/img/bg.jpg"
+        },
+        "filename": "thanks.md"
     }
-  },{
-  "filename": "agenda.md",
-    "attr": {
-    "data-background": "css/img/bg.jpg"
-    }
-  },[{
-    "filename": "dev_mode/index.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "dev_mode/docker.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "dev_mode/ansible.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "dev_mode/virtualenv.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  }],[{
-    "filename": "geonode_project/index.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geonode_project/python-inheritance.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geonode_project/setup.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geonode_project/howto_run.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geonode_project/final_structure.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  }],[{
-    "filename": "look_feel/index.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "look_feel/home_content.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "look_feel/home_look.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "look_feel/site_look.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "look_feel/generic_page.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  }],[{
-    "filename": "custom_app/index.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "custom_app/create_collections.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  }],[{
-    "filename": "geocollection_app/index.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geocollection_app/model.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geocollection_app/migrate.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geocollection_app/view.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geocollection_app/url.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geocollection_app/admin.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geocollection_app/template.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "geocollection_app/results.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  }],[{
-    "filename": "api-permissions/index.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "api-permissions/permissions_meta.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "api-permissions/permissions_default.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "api-permissions/permissions_methods.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "api-permissions/permissions_view.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "api-permissions/permissions_url.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "api-permissions/permissions_client.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "api-permissions/api.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "api-permissions/api_auth.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "api-permissions/api_urls.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "api-permissions/test-api.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  }],[{
-    "filename": "deploy/index.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "deploy/github.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "deploy/server_setup.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "deploy/my_geonode.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  }],[{
-    "filename": "third_party_app/index.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "third_party_app/install_wagtail.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "third_party_app/settings.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "third_party_app/urls.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  },{
-    "filename": "third_party_app/admin_page.md",
-      "attr": {
-      "data-background": "css/img/bg.jpg"
-      }
-  }],{
-  "filename": "thanks.md",
-    "attr": {
-    "data-background": "css/img/bg.jpg"
-    }
-  }
 ]
