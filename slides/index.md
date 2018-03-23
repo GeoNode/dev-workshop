@@ -1,6 +1,6 @@
 # GeoNode Developers Workshop
 
-## Cambridge, 08/14/2017
+## ITHACA, 26/03/2018
 
 ##### Simone Dalmasso
 ##### European Commission - Joint Research Center
