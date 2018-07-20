@@ -1,6 +1,6 @@
 # GeoNode Developers Workshop
 
-## ITHACA, 26/03/2018
+## FOSS4G 2018 @ Dar Es Salaam
 
 ##### Simone Dalmasso
 ##### European Commission - Joint Research Center
