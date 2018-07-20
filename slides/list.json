@@ -25,7 +25,12 @@
       "data-background": "css/img/bg.jpg"
       }
   },{
-    "filename": "dev_mode/virtualenv.md",
+    "filename": "dev_mode/virtualenv_requirements.md",
+      "attr": {
+      "data-background": "css/img/bg.jpg"
+      }
+  },{
+    "filename": "dev_mode/virtualenv_howto.md",
       "attr": {
       "data-background": "css/img/bg.jpg"
       }
