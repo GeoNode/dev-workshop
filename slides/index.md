@@ -9,3 +9,7 @@
 ##### Francesco Bartoli
 ##### Geobeyond Srl
 [![Geobeyond](css/img/gb-logo.png)](http://www.geobeyond.it)
+
+##### Alessio Fabiani
+##### Geo-Solutions SAS
+[![Geo-Solutions](css/img/gs-logo.png)](http://www.geo-solutions.it)
