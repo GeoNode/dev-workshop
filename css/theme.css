@@ -488,6 +488,7 @@ body {
 .slides {
   top: 50% !important;
   height: auto;
+  width: 100% !important;
 }
 
 /* line 216, source/theme.scss */
