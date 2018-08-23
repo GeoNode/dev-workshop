@@ -8,7 +8,7 @@ We already used `startproject` to create our geonode-project, now we can use `st
 This will create a folder named `geocollections` that contains empty models and views.
 
 We need to add the new app to the `INSTALLED_APPS` of our project.
-in `my_geonode/settings.py` line 56 change:
+in `my_geonode/settings.py` line 93 change:
 
-`INSTALLED_APPS = INSTALLED_APPS + ('my_geonode',)` to
-`INSTALLED_APPS = INSTALLED_APPS + ('my_geonode', 'geocollections',)`
+`INSTALLED_APPS += (PROJECT_NAME,)` to
+`INSTALLED_APPS += (PROJECT_NAME, 'geocollections',)`
