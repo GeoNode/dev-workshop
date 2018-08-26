@@ -1,6 +1,6 @@
 # Customize Metadata (5)
 
-**Resource Base Patching**
+**Overriding the Layer Detail Template Page**
 
 ```shell
 mkdir -p my_geonode/templates/base

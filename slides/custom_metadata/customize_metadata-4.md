@@ -1,6 +1,6 @@
 # Customize Metadata (4)
 
-**Resource Base Patching**
+**Overriding the Metadata Wizard Template Page**
 
 ```shell
 mkdir -p my_geonode/templates/layers/layouts

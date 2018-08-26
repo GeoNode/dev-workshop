@@ -1,6 +1,6 @@
 # Customize Metadata (3)
 
-**Resource Base Patching**
+**Updating the Model**
 
 You will need to `run migrations` again and restart the server...
 
