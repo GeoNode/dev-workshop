@@ -2,7 +2,7 @@
 
 **Resource Base Patching**
 
-Add the patch_resource_base method to the AppConfig and run it from the ready method.
+Add the `patch_resource_base` method to the `AppConfig` and run it from the ready method.
 
 ```python
 ...

@@ -3,8 +3,10 @@
 **Resource Base Patching**
 
 This is a way to add fields directly to the ResourceBase Class without actually modifying it.
-Can be done from my_geonode.apps
-The ready method is invoked ad initialization time and can be currently used to tweak your app in several ways.
+
+Can be done from `my_geonode.apps`
+
+The `ready` method is invoked ad initialization time and can be currently used to tweak your app in several ways.
 
 ```python
 ...
