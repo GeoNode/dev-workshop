@@ -2,7 +2,7 @@
 
 **Resource Base Patching**
 
-```bash
+```shell
 mkdir -p my_geonode/templates/layers/layouts
 cp /home/geo/Envs/geonode/src/geonode/geonode/layers/templates/layouts/panels.html my_geonode/templates/layers/layouts/
 vim my_geonode/templates/layers/layouts/panels.html
