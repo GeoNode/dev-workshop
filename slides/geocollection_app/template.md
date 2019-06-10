@@ -9,6 +9,7 @@ vim my_geonode/templates/geocollections/geocollection_detail.html
 ```
 
 ```html
+{% raw %}
 {% extends "geonode_base.html" %}
 
 {% block body %}
@@ -21,4 +22,5 @@ vim my_geonode/templates/geocollections/geocollection_detail.html
         {% endfor %}
     </ul>
 {% endblock %}
+{% endraw %}
 ```
