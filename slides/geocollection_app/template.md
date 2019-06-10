@@ -8,8 +8,8 @@ mkdir -p my_geonode/templates/geocollections/
 vim my_geonode/templates/geocollections/geocollection_detail.html
 ```
 
-```html
 {% raw %}
+```html
 {% extends "geonode_base.html" %}
 
 {% block body %}
@@ -22,5 +22,5 @@ vim my_geonode/templates/geocollections/geocollection_detail.html
         {% endfor %}
     </ul>
 {% endblock %}
-{% endraw %}
 ```
+{% endraw %}
