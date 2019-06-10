@@ -2,6 +2,9 @@
 
 Let's add a method that will be used to set the default permissions on the Geocollections.
 We can add this logic to the Geocollection model but could also be a generic Mixin like it is in GeoNode.
+```bash
+vim geocollections/models.py
+```
 
 ```python
 from django.contrib.auth.models import Group
@@ -11,7 +14,7 @@ from django.conf import settings
 from guardian.shortcuts import assign_perm
 ```
 ```python
-def set_default_permissions(self):
+    def set_default_permissions(self):
         """
         Set default permissions.
         """

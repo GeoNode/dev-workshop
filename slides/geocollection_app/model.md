@@ -1,5 +1,9 @@
 # The Geocollections model
 
+```bash
+vim geocollections/models.py
+```
+
 ```python
 
 from django.db import models

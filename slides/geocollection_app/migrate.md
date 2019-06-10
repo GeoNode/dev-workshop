@@ -6,6 +6,6 @@ Django since version [1.8](https://docs.djangoproject.com/en/1.8/) has embedded 
 Make sure to be in the `my_geonode` folder
 
 ```python
-python manage.py makemigrations geocollections
+python manage.py makemigrations
 python manage.py migrate
 ```

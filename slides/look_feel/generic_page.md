@@ -5,3 +5,9 @@ In order to customize another GeoNode page, for example the layers list page, yo
 
 For the layers list page we can add a folder named `layers`into the template folder and a file named `layer_list.html`in there.
 The changes made in this file will only affect the layer list page.
+
+```bash
+mkdir -p my_geonode/templates/layers/
+cp <geonode>/geonode/layers/templates/layer_list.html my_geonode/templates/layers/layer_list.html
+vim my_geonode/templates/layers/layer_list.html
+```

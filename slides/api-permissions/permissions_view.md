@@ -1,6 +1,10 @@
 # Permissions logic (view)
 
-We can add now a view to receive and set our permissions, in views.py:
+We can add now a view to receive and set our permissions, in `views.py`:
+```bash
+vim geocollections/views.py
+```
+
 ```python
 import json
 from django.core.exceptions import PermissionDenied
@@ -10,6 +14,7 @@ from django.http import HttpResponse
 def geocollection_permissions(request, collection_id):
 
     collection = Geocollection.objects.get(id=collection_id)
+
     if not user.has_perm('view_geocollection', collection):
       return HttpResponse(
           'You are not allowed to change permissions for this resource',
