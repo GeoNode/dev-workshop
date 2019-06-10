@@ -3,7 +3,11 @@
 Now we need the template where the Geocollection detail will be rendered.
 Let's create a `geocollections` folder inside the `my_geonode/templates` folder with a file named `geocollection_detail.html`:
 
-{% raw %}
+```bash
+mkdir -p my_geonode/templates/geocollections/
+vim my_geonode/templates/geocollections/geocollection_detail.html
+```
+
 ```html
 {% extends "geonode_base.html" %}
 
@@ -18,4 +22,3 @@ Let's create a `geocollections` folder inside the `my_geonode/templates` folder 
     </ul>
 {% endblock %}
 ```
-{% endraw %}

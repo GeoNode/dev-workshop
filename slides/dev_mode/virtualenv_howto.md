@@ -2,7 +2,7 @@
 
 How to:
 * `mkvirtualenv my_geonode`
-* `git clone -b 2.8.0 --single-branch https://github.com/GeoNode/geonode`
+* `git clone --single-branch https://github.com/GeoNode/geonode`
 * `pip install -r geonode/requirements.txt && pip install -e geonode`
 * `pip install gdal`
 * `cd geonode && paver setup`

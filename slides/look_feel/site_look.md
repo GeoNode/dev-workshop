@@ -18,7 +18,7 @@ into:
 
 ```html
 <li>
- <a href="{{ PROJECT_ROOT }}">Geocollections</a>
+ <a href="{{ PROJECT_ROOT }}/geocollections">Geocollections</a>
 </li>
 ```
 
